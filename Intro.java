@@ -1,10 +1,12 @@
 public class Intro {
 
     int x;
+    String name;
 
     // creating constructor
-    public Intro(int x) {
+    public Intro(int x, String name) {
         this.x = x;
+        this.name = name;
     }
 
 

@@ -1,12 +1,16 @@
+//import single class
+import java .util.Scanner;
+import java.util.*;
 public class Second {
 
     public static void main(String[] args) {
-        System.out.println("hello world");
-        Intro myObj = new Intro(12);
-        Intro myObj2 = new Intro(12);
-        System.out.println(myObj.x+" "+myObj2.x);
+        Scanner myObj3 = new Scanner(System.in);
+        System.out.println("Enter username");
+        String username = myObj3.nextLine();
+        Intro myObj = new Intro(12,username);
+        System.out.println(myObj.x + " " + myObj.name);
 
-        myObj2.myPublicMethod(); // need a object to call this method
+        myObj.myPublicMethod(); // need a object to call this method
         // no need object to call this method
     }
 }
